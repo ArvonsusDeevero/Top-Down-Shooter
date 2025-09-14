@@ -105,7 +105,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"D:/Project Game/Top-Down-Shooter/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
@@ -342,9 +342,15 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/CustomInput/CoinMove.cs"
+"Assets/CustomInput/EnemyMove.cs"
+"Assets/CustomInput/GameManager.cs"
 "Assets/CustomInput/MyCustomInput.cs"
+"Assets/CustomInput/MyDestroyable.cs"
 "Assets/CustomInput/MyInputHandler.cs"
 "Assets/CustomInput/MyMoveable.cs"
+"Assets/CustomInput/MyMovementBoundary.cs"
+"Assets/CustomInput/MyObjectLifeTime.cs"
 "Assets/CustomInput/MyPlayerController.cs"
 "Assets/Script/ScrollingBackground.cs"
 -langversion:8.0
