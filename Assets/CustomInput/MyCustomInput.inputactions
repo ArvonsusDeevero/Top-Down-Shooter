@@ -1,0 +1,77 @@
+{
+    "name": "CustomInput",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "90d94e7a-a8d1-42ba-98b7-dbb9c6293b71",
+            "actions": [
+                {
+                    "name": "Set Direction",
+                    "type": "Value",
+                    "id": "4159c8a9-7a48-4e0f-8e50-cb2c8d9b3677",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "9ecc2cda-5587-482b-8fdb-146bd1c0bdac",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Set Direction",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "87122182-ab83-42a9-9c23-5f1b4fd43808",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Set Direction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "6986bd03-be2a-4c8e-a01b-dbc77daa2950",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Set Direction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "20b946ad-e0c8-4163-84ad-9aa305388d60",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Set Direction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2c60f643-fce9-4187-ae28-9c0acc24713c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Set Direction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
