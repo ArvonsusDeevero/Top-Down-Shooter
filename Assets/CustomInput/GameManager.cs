@@ -7,8 +7,7 @@ namespace MyCode
     public class GameManager : MonoBehaviour
     {
         private static GameManager instance;
-
-        [SerializeField] private GameObject activePlayer;
+        public GameObject activePlayer;
         public GameObject playerPrefab;
 
         private void Awake()

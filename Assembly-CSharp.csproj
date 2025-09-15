@@ -56,17 +56,25 @@
     <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\CustomInput\MyInputHandler.cs" />
-    <Compile Include="Assets\CustomInput\MyMoveable.cs" />
-    <Compile Include="Assets\CustomInput\MyCustomInput.cs" />
-    <Compile Include="Assets\CustomInput\MyPlayerController.cs" />
-    <Compile Include="Assets\Script\ScrollingBackground.cs" />
+    <Compile Include="Assets\CustomInput\MyAutoShoot.cs" />
     <Compile Include="Assets\CustomInput\MyMovementBoundary.cs" />
-    <Compile Include="Assets\CustomInput\EnemyMove.cs" />
-    <Compile Include="Assets\CustomInput\CoinMove.cs" />
-    <Compile Include="Assets\CustomInput\GameManager.cs" />
-    <Compile Include="Assets\CustomInput\MyObjectLifeTime.cs" />
+    <Compile Include="Assets\CustomInput\MyWeapon.cs" />
     <Compile Include="Assets\CustomInput\MyDestroyable.cs" />
+    <Compile Include="Assets\CustomInput\OP\MyObjectPool.cs" />
+    <Compile Include="Assets\CustomInput\InputHandler.cs" />
+    <Compile Include="Assets\CustomInput\MyMoveable.cs" />
+    <Compile Include="Assets\CustomInput\Moveable.cs" />
+    <Compile Include="Assets\CustomInput\CoinMove.cs" />
+    <Compile Include="Assets\CustomInput\MyCustomInput.cs" />
+    <Compile Include="Assets\CustomInput\MyTravelDistanceLimit.cs" />
+    <Compile Include="Assets\CustomInput\MyPlayerController.cs" />
+    <Compile Include="Assets\CustomInput\EnemyMove.cs" />
+    <Compile Include="Assets\CustomInput\MyTriggerEvent.cs" />
+    <Compile Include="Assets\Script\ScrollingBackground.cs" />
+    <Compile Include="Assets\CustomInput\MyObjectLifeTime.cs" />
+    <Compile Include="Assets\CustomInput\OP\MyPoolObject.cs" />
+    <Compile Include="Assets\CustomInput\GameManager.cs" />
+    <Compile Include="Assets\CustomInput\MyLookAtPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sprites\oak_woods_v1.0\readme.TXT" />

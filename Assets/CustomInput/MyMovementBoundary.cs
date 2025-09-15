@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(MyMoveable))]
-public class MovementBoundary : MonoBehaviour
+public class MyMovementBoundary : MonoBehaviour
 {
     public Rect movementBounds;
 

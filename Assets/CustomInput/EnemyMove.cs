@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(MyMoveable))]
-public class AutoMover : MonoBehaviour
+public class EnemyMove : MonoBehaviour
 {
     public enum MoveMode { Forward, Random }
     public MoveMode moveMode = MoveMode.Forward;

@@ -1,13 +1,12 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine;
-
 [RequireComponent(typeof(MyMoveable))]
-public class PlayerController : MonoBehaviour
+public class MyPlayerController : MonoBehaviour
 {
-    public MyInputHandler inputHandler;
+    [Header("Assign InputHandler (ScriptableObject) here")]
+    public InputHandler inputHandler; // ✅ Pastikan ini diisi di Inspector
 
     private MyMoveable moveableComponent;
 
@@ -19,18 +18,29 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         if (inputHandler != null)
-            inputHandler.OnSetDirectionAction += HandleDirectionInput;
+        {
+            inputHandler.OnMoveAction += HandleDirectionInput;
+        }
+        else
+        {
+            Debug.LogWarning($"{name}: InputHandler belum di-assign di Inspector!");
+        }
     }
 
     private void OnDisable()
     {
         if (inputHandler != null)
-            inputHandler.OnSetDirectionAction -= HandleDirectionInput;
+        {
+            inputHandler.OnMoveAction -= HandleDirectionInput;
+        }
     }
 
     private void HandleDirectionInput(Vector2 direction)
     {
-        Debug.Log("Direction input received");
+        // Debug log untuk memastikan input diterima
+        Debug.Log($"[{name}] Direction input received: {direction}");
+
+        // Panggil komponen MyMoveable untuk menggerakkan player
         moveableComponent.SetDirection(direction);
     }
 }

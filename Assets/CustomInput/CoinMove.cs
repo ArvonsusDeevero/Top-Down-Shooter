@@ -4,7 +4,7 @@ using UnityEngine;
 using MyCode;
 
 [RequireComponent(typeof(MyMoveable))]
-public class MoveTowardPlayer : MonoBehaviour
+public class CoinMove : MonoBehaviour
 {
     private MyMoveable moveable;
 

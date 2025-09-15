@@ -4,13 +4,10 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class MyObjectLifetime : MonoBehaviour
+public class MyObjectLifeTime : MonoBehaviour
 {
-    [Header("Lifetime Settings")]
-    [SerializeField] private float lifeTime = 3f;
-    [SerializeField] private float blinkingDelay = 0.2f;
-
-    [Header("Events")]
+    public float lifeTime;
+    public float blinkingDelay;
     public UnityEvent OnTimerReachedZero;
 
     private float timer;
